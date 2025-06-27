@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOADING PAGE</title>
+       <style>
+            body {
+            background-color:rgb(224, 185, 191);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            }
+            .loader-container {
+            text-align: center;
+            }
+
+            .loader-box {
+            width: 200px;
+            height: 30px;
+            border: 4px solid rgb(40, 71, 40);
+            border-radius: 30px;
+            box-shadow: 10px;
+            color:rgb(177, 150, 114);
+            text-shadow: 3px 4px #aaa;
+            animation:fillloader 1s infinite;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+             }
+            .fill{
+             position: absolute;
+            height: 100%;
+             width: 0%;
+             background-color:rgb(92, 114, 92);
+             animation: fillLoader 2s infinite;
+             left: 0;
+             top: 0;
+            
+             }
+            @keyframes fillLoader {
+              0% { width: 0%; opacity: 1; }
+            50% { width: 100%; opacity: 0.7; }
+            100% { width: 0%; opacity: 1; }
+            }
+           p {
+            font-size: 30px;
+            font-family:cursive;
+            font-smooth:200px;
+            font-display: double;
+            color:rgb(158, 122, 75);
+            text-shadow: 2px 2px rgb(175, 135, 135);
+       }
+        </style>
+    </head>
+    <BODY>
+        <center><img src="d:\download cat" height="200",width=200></center>
+        <div class="loader-container">
+            <div class="loader-box">
+            <div class="fill"></div>
+            </div>
+            <p>loading..</p>
+            </div>
+      
+    </BODY>
+</html>
